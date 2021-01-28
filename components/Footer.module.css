@@ -1,0 +1,29 @@
+.footerWrapper
+{
+  position:relative;
+  width: 100%;
+  height: auto;
+  background: #212529;
+}
+
+.footer
+{
+  height: auto;
+  margin: 0;
+  padding: 2rem 0rem;
+  background: #a00c0c;
+  color: white;
+}
+
+.footer h5 
+{
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 4px;
+}
+
+.footerBase {
+  background: none;
+  color: white;
+  padding: 0.5rem 0rem;
+}

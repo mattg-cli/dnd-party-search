@@ -2,6 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background: #636262;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +14,32 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+button.btn-default
+{
+  background:#a00c0c;
+  color: white;
+}
+button.btn-default:hover 
+{
+  background:#de1515;
+  color: white;
+}
+
+.bg-none
+{
+  background: none !important;
+}
+
+hr 
+{
+  border-top: 1px solid rgba(160,12,12,1) !important;
+}
+
+ul.clean
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
