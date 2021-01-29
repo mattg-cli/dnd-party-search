@@ -33,12 +33,16 @@ export default function Home() {
     <div>
       <Header />
       <section className={`py-5 ${styles.banner}`}>
-        <div className="jumbotron mb-0 bg-none">
-        <h1 className="display-4">YOUR ADVENTURE AWAITS!</h1>
-          <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr className="my-4" />
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <button className="btn btn-default">START YOUR ADVENTURE</button>
+        <div className="container">
+          <div className="row">
+            <div className="jumbotron mb-0 bg-none">
+            <h1 className="display-4">YOUR ADVENTURE AWAITS!</h1>
+              <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <hr className="my-4" />
+              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+              <button className="btn btn-default">START YOUR ADVENTURE</button>
+            </div>
+          </div>
         </div>
       </section>
       <section className="py-5">
@@ -46,7 +50,7 @@ export default function Home() {
           <div className="row">
             {
               aspects.map((value, index) => {
-                return <Aspect title={value.title} description={value.description} icon={value.icon} />
+                return <Aspect key={index} title={value.title} description={value.description} icon={value.icon} />
               })
             }
             {/* <Aspect 

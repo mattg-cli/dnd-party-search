@@ -2,9 +2,9 @@
 // import Footer from './Footer';
 // import '../styles/Layout.module.css'
 
-const Aspect = ({title, description, icon}) => {
+const Aspect = ({index, title, description, icon}) => {
   return (
-    <div className="col">
+    <div className="col-xs-12 col-md-6 col-lg-3">
       <div className="card shadow-lg">
         <div className="card-body text-center">
           <i className={`${icon} fa-3x`}></i>
