@@ -62,22 +62,3 @@
   right: 0;
   object-fit: cover;
 }
-
-.counterCircle
-{
-  background: #a00c0c;
-  color: white;
-  font-size: 30px;
-  border: 1px solid white;
-  height: 150px;
-  width: 150px;
-  border: 1px solid white;
-  border-radius: 50%;
-  margin: auto;
-  position: relative;
-}
-
-.counterCircle p 
-{
-  font-size: 4rem;
-}

@@ -6,31 +6,30 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
 
+/* TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6 
 {
   line-height: 1.2 !important;
-}
-
-.thin 
-{
-  font-weight: 300 !important;
 }
 
 a {
   color: inherit !important;
   text-decoration: none;
 }
-
 a:hover 
 {
   filter: brightness(.3);
 }
-
-* {
-  box-sizing: border-box;
+hr 
+{
+  border-top: 1px solid rgba(160,12,12,1) !important;
 }
 
+/* BUTTON */
 button.btn-default
 {
   background:#a00c0c;
@@ -42,6 +41,7 @@ button.btn-default:hover
   color: white;
 }
 
+/* BACKGROUNDS */
 .bg-none
 {
   background: none !important;
@@ -51,9 +51,10 @@ button.btn-default:hover
   background-color: rgba(0,0,0,0.3);
 }
 
-hr 
+/* UTILITY */
+.thin 
 {
-  border-top: 1px solid rgba(160,12,12,1) !important;
+  font-weight: 300 !important;
 }
 
 ul.clean
@@ -61,4 +62,21 @@ ul.clean
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.hvr-breath
+{
+  transition: all .2s ease-in-out;
+}
+.hvr-breath:hover{
+  transform: scale(1.1);
+}
+
+.hvr-float
+{
+  transition: all .2s ease-in-out;
+}
+.hvr-float:hover
+{
+  transform: translateY(-8px);
 }
