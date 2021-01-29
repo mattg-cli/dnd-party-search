@@ -12,3 +12,72 @@
 {
   margin: 2rem 0rem;
 }
+
+/* .statsWrapper
+{
+  background-image: linear-gradient(135deg, #343a40 70%, #F4F4F4 calc(70% + 2px)) 
+} */
+
+.statsWrapper
+{
+  position: relative;
+  width: 100%;
+  padding: 0 24px;
+  contain: content;
+  z-index: 9;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(/images/lighthouse.jpg); */
+}
+
+@media (min-width: 720px) {
+  .statsWrapper 
+  {
+      /* height: 540px; */
+      transform-style: preserve-3d;
+  }
+}
+
+.statsOverlay
+{
+  position: absolute;
+    left: -20%;
+    top: -60%;
+    width: 80%;
+    height: 180%;
+    background: #26262c;
+    transform: rotate(14deg) translateZ(0px);
+    box-shadow: 10px 1px 50px 0 rgb(0 0 0 / 50%);
+    z-index: -1;
+}
+
+.statsFeature
+{
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 17%;
+  right: 0;
+  object-fit: cover;
+}
+
+.counterCircle
+{
+  background: #a00c0c;
+  color: white;
+  font-size: 30px;
+  border: 1px solid white;
+  height: 150px;
+  width: 150px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+
+.counterCircle p 
+{
+  font-size: 4rem;
+}

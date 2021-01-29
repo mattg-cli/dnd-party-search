@@ -41,9 +41,9 @@ const Footer = props => {
             <div className="col-xs-12 col-sm-6 col-lg-3 pt-5">
               <h5>Resources</h5>
               <ul className="clean">
-                <li>D&amp;D Beyond</li>
-                <li>Wizards of the Coast</li>
-                <li>DMs Guild</li>
+                <li><a href="https://www.dndbeyond.com/" target="_blank">D&amp;D Beyond</a></li>
+                <li><a href="https://company.wizards.com/" target="_blank">Wizards of the Coast</a></li>
+                <li><a href="https://www.dmsguild.com/" target="_blank">Dungeon Master's Guild</a></li>
               </ul>
             </div>
             <div className="col-xs-12 col-sm-6 col-lg-3 pt-5">
