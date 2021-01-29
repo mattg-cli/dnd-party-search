@@ -1,6 +1,6 @@
 import Navigation from './Navigation';
 import Head from 'next/head';
-import '../styles/Header.module.css';
+import styles from'./Header.module.css';
 
 const Header = props => {
   

@@ -1,6 +1,26 @@
+import Icon from './Icon';
 import styles from './Footer.module.css';
 
 const Footer = props => {
+
+  const footerSocialMediaLinksAndIcons = [
+    {
+      link: "https://discord.com/",
+      icon: 'fab fa-discord'
+    },
+    {
+      link: "https://twitter.com/",
+      icon: 'fab fa-twitter'
+    },
+    {
+      link: "https://www.reddit.com/",
+      icon: 'fab fa-reddit'
+    },
+    {
+      link: "https://www.youtube.com/",
+      icon: 'fab fa-youtube'
+    }
+  ];
   
   return (
     <div className={`shadow-lg ${styles.footerWrapper}`}>
@@ -29,10 +49,15 @@ const Footer = props => {
             <div className="col-xs-12 col-sm-6 col-lg-3 pt-5">
               <h5>Social Media</h5>
               <ul className="list-inline">
-                <li className="list-inline-item"><i className="fab fa-discord fa-2x"></i></li>
-                <li className="list-inline-item"><i className="fab fa-twitter fa-2x"></i></li>
-                <li className="list-inline-item"><i className="fab fa-reddit fa-2x"></i></li>
-                <li className="list-inline-item"><i className="fab fa-youtube fa-2x"></i></li>
+                {
+                  footerSocialMediaLinksAndIcons.map((value, index) => {
+                    return (
+                      <li key={index} className="list-inline-item">
+                        <Icon link={value.link} icon={value.icon} />
+                      </li>
+                      )
+                  })
+                }
               </ul>
             </div>
           </div>

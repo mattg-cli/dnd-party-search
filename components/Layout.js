@@ -1,6 +1,6 @@
 import Header from './Header';
 import Footer from './Footer';
-import '../styles/Layout.module.css'
+import styles from './Layout.module.css'
 
 const Layout = props => {
   

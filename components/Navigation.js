@@ -6,7 +6,7 @@ const Navigation = props => (
       <div className="row">
         <div className="col">
 
-          <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+          <nav className="navbar navbar-expand-md navbar-dark">
             <a className="navbar-brand" href="#">Logo</a>
             <button 
               className="navbar-toggler" 

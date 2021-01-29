@@ -8,8 +8,13 @@ body {
 }
 
 a {
-  color: inherit;
+  color: inherit !important;
   text-decoration: none;
+}
+
+a:hover 
+{
+  filter: brightness(.3);
 }
 
 * {

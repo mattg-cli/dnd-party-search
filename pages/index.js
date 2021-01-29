@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <section className={`py-5 shadow-bg ${styles.banner}`}>
+      <section className={`py-5 shadow-lg ${styles.banner}`}>
         <div className="container">
           <div className="row">
             <div className="col">
