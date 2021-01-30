@@ -4,7 +4,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 const StatCircle = ({index, title, number}) => {
   return (
-    <div className="col-md-6 text-center">
+    <div className="col-6 text-center">
       <h4 className="mb-2 mt-5 text-uppercase">{title}</h4>
       <div className={`${styles.counterCircle} flex align-items-center justify-content-center`}>
       <CountUp start={0} end={number} separator="," delay={0}>

@@ -1,0 +1,11 @@
+.navigation
+{
+  padding: 0.5rem 0;
+  background:rgba(160, 12, 12, 1);
+  color: white;
+}
+
+.navigation .left 
+{
+  margin-bottom: 0;
+}

@@ -49,7 +49,7 @@ export default function Home() {
                 <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                 <hr className="my-4" />
                 <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <button className="btn btn-default">Start Your Adventure!</button>
+                <button className="btn btn-default">START YOUR ADVENTURE</button>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Home() {
       <section className={`text-light shadow-lg py-5 ${styles.statsWrapper}`}>
         <div className="container">
           <div className="row">
-            <div className="col-md-6 offset-md-1">
+            <div className="col-sm-12 col-lg-6 offset-lg-1">
               <h2 className="mb-0 text-center thin">JOIN THE COMMUNITY</h2>
               
               <div className="row">
