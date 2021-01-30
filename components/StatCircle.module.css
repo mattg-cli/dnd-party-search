@@ -1,0 +1,30 @@
+.counterCircle
+{
+  background: #a00c0c;
+  color: white;
+  margin: auto;
+  position: relative;
+  font-size: 30px;
+  height: 150px;
+  width: 150px;
+  border: 1px solid white;
+  border-radius: 50%;
+  border-width: 2px
+}
+
+.counterCircle p 
+{
+  font-size: 4rem;
+}
+
+@media (max-width: 720px) {
+  .counterCircle 
+  {
+    height: 120px;
+    width: 120px;
+  }
+  .counterCircle p
+  {
+    font-size: 3rem;
+  }
+}

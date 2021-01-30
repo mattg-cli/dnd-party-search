@@ -2,15 +2,89 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background: #636262;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 
+{
+  line-height: 1.2 !important;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none;
+}
+a:hover 
+{
+  filter: brightness(.3);
+}
+hr 
+{
+  border-top: 1px solid rgba(160,12,12,1) !important;
+}
+
+/* BUTTON */
+button.btn-default
+{
+  background:#a00c0c;
+  color: white;
+}
+button.btn-default:hover 
+{
+  background:#de1515;
+  color: white;
+}
+
+/* BACKGROUNDS */
+.bg-none
+{
+  background: none !important;
+}
+.bg-opaque
+{
+  background-color: rgba(0,0,0,0.8);
+}
+.bg-red
+{
+  background: #a00c0c
+}
+.bg-black
+{
+  background: #000
+}
+
+/* UTILITY */
+.thin 
+{
+  font-weight: 300 !important;
+}
+
+ul.clean
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hvr-breath
+{
+  transition: all .2s ease-in-out;
+}
+.hvr-breath:hover{
+  transform: scale(1.1);
+}
+
+.hvr-float
+{
+  transition: all .2s ease-in-out;
+}
+.hvr-float:hover
+{
+  transform: translateY(-8px);
 }
