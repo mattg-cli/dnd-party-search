@@ -48,7 +48,15 @@ button.btn-default:hover
 }
 .bg-opaque
 {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.8);
+}
+.bg-red
+{
+  background: #a00c0c
+}
+.bg-black
+{
+  background: #000
 }
 
 /* UTILITY */

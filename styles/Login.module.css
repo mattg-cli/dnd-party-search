@@ -1,0 +1,12 @@
+.background
+{
+  background-image: url(/images/city-gates.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.loginWrapper
+{
+  border: 2px solid white;
+  border-radius: 10px;
+}
