@@ -60,6 +60,10 @@ button.btn-default:hover
 }
 
 /* UTILITY */
+.text-default 
+{
+  color: #a00c0c
+}
 .thin 
 {
   font-weight: 300 !important;
@@ -70,6 +74,26 @@ ul.clean
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #a09e9e;
+}
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #a09e9e;
+}
+.separator::before {
+  margin-right: .25em;
+}
+.separator::after {
+  margin-left: .25em;
 }
 
 .hvr-breath
