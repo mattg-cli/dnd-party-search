@@ -1,13 +1,13 @@
 .banner
 {
   color: white;
+  padding: 5rem 0rem;
   background-image: url(/images/hero-sunrise.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   /* background-attachment: fixed; */
 }
-
 .banner h1
 {
   margin: 2rem 0rem;
@@ -42,14 +42,14 @@
 .statsOverlay
 {
   position: absolute;
-    left: -20%;
-    top: -60%;
-    width: 80%;
-    height: 180%;
-    background: #26262c;
-    transform: rotate(14deg) translateZ(0px);
-    box-shadow: 10px 1px 50px 0 rgb(0 0 0 / 50%);
-    z-index: -1;
+  left: -20%;
+  top: -60%;
+  width: 80%;
+  height: 180%;
+  background: #26262c;
+  transform: rotate(14deg) translateZ(0px);
+  box-shadow: 10px 1px 50px 0 rgb(0 0 0 / 50%);
+  z-index: -1;
 }
 
 .statsFeature

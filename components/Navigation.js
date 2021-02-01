@@ -5,13 +5,20 @@ const Navigation = props => (
   <nav className={`fixed-top ${styles.navigation}`}>
     <div className="container">
       <div className="row">
-        <div className="col">
-          <ul className={`list-inline text-right ${styles.left}`}>
+        <div className="col-6">
+          <ul className={`list-inline`}>
+            <li className="list-inline-item px-1">
+              <Link href="/">HOME</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="col-6">
+          <ul className={`list-inline text-right ${styles.right}`}>
             <li className="list-inline-item px-1">
               <Link href="/login">LOGIN</Link>
             </li>
             <li className="list-inline-item px-1">
-              <Link href="/sign-up">SIGN UP</Link>
+              <Link href="/register">REGISTER</Link>
             </li>
           </ul>
         </div>
