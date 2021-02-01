@@ -32,7 +32,7 @@ hr
 /* ELEMENTS */
 input.form-control
 {
-  border-radius: 0;
+  border-radius: 0.01rem;
 }
 
 /* BUTTON */

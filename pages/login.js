@@ -1,10 +1,11 @@
-import Header from '.';
+import Header from '../components/Header';
 import styles from '../styles/Login.module.css'
 
 export default function Login() {
 
   return (
     <div>
+      <Header />
       <section className={`vh-100 ${styles.background}`}>
         <div className="container vh-100">
           <div className="row">
