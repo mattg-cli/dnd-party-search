@@ -49,7 +49,9 @@ export default function Home() {
                 <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                 <hr className="my-4" />
                 <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <button className="btn btn-default">START YOUR ADVENTURE</button>
+                <button className="btn btn-default">
+                  <Link href="/find-a-party">START YOUR ADVENTURE</Link>
+                </button>
               </div>
             </div>
           </div>

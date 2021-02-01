@@ -1,0 +1,8 @@
+.findAPartyBackground 
+{
+  background-size: cover;
+  background-attachment: fixed;
+  height: 350px;
+  position: relative;
+  background-image: url(/images/snowy-mountain-1920.jpg);
+}
