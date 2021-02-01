@@ -1,12 +1,12 @@
 .background
 {
-  background-image: url(/images/city-gates-flip-horizontal.jpg);
+  background-image: url(/images/city-gates.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-.loginWrapper
+.loginBoxBorder
 {
-  border: 2px solid white;
+  border: 2px solid #a00c0c;
   border-radius: 10px;
 }

@@ -1,6 +1,7 @@
 .banner
 {
   color: white;
+  padding: 5rem 0rem;
   background-image: url(/images/hero-sunrise.jpg);
   background-size: cover;
   background-repeat: no-repeat;

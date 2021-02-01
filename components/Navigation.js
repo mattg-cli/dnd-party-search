@@ -11,7 +11,7 @@ const Navigation = props => (
               <Link href="/login">LOGIN</Link>
             </li>
             <li className="list-inline-item px-1">
-              <Link href="/sign-up">SIGN UP</Link>
+              <Link href="/register">REGISTER</Link>
             </li>
           </ul>
         </div>

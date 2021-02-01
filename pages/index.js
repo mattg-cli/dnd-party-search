@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <section className={`py-5 shadow-lg ${styles.banner}`}>
+      <section className={`shadow-lg ${styles.banner}`}>
         <div className="container">
           <div className="row">
             <div className="col">

@@ -29,6 +29,12 @@ hr
   border-top: 1px solid rgba(160,12,12,1) !important;
 }
 
+/* ELEMENTS */
+input.form-control
+{
+  border-radius: 0;
+}
+
 /* BUTTON */
 button.btn-default
 {
@@ -48,7 +54,7 @@ button.btn-default:hover
 }
 .bg-opaque
 {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
 }
 .bg-red
 {
