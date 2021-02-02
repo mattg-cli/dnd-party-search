@@ -46,6 +46,10 @@ button.btn-default:hover
   background:#de1515;
   color: white;
 }
+button.btn-default a:hover {
+  color: white;
+  text-decoration: none;
+}
 
 /* BACKGROUNDS */
 .bg-none
