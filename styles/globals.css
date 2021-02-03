@@ -56,9 +56,17 @@ button.btn-default a:hover {
 {
   background: none !important;
 }
-.bg-opaque
+.bg-gray
+{
+  background: #636262;
+}
+.bg-dark-overlay-90
 {
   background-color: rgba(0,0,0,0.9);
+}
+.bg-dark-overlay-50
+{
+  background: rgba(0,0,0,0.5);
 }
 .bg-red
 {

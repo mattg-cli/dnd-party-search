@@ -11,7 +11,7 @@ export default function Login() {
           <div className="row">
             <div className="col-12 vh-100">
               <div className="row h-100 justify-content-center align-items-center">
-                <div className={`col-10 col-md-8 col-lg-4 bg-opaque text-light ${styles.loginBoxBorder}`}>
+                <div className={`col-10 col-md-8 col-lg-4 bg-dark-overlay-90 text-light ${styles.loginBoxBorder}`}>
                   <div className="px-3 py-4">
                     <h4 className="display-4 text-center">LOGIN</h4>
                     <form className="pb-3">
