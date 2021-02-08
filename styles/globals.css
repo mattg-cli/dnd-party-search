@@ -50,6 +50,34 @@ button.btn-default a:hover {
   color: white;
   text-decoration: none;
 }
+button.btn-xlg
+{
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  line-height: 2;
+  border-radius: .3rem;
+  text-align: center;
+}
+
+button.btn-option
+{
+  padding: 5rem 0rem;
+  font-size: 1.5rem;
+  color: white;
+  border: 1px solid #000000;
+  overflow: hidden;
+  position: relative;
+  background-size: 150%;
+  background-position: center;
+  transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -ms-transition: all 0.5s ease;
+ -webkit-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+}
+button.btn-option:hover {
+  background-size: 200%;
+} 
 
 /* BACKGROUNDS */
 .bg-none
@@ -112,21 +140,4 @@ ul.clean
 }
 .separator::after {
   margin-left: .25em;
-}
-
-.hvr-breath
-{
-  transition: all .2s ease-in-out;
-}
-.hvr-breath:hover{
-  transform: scale(1.1);
-}
-
-.hvr-float
-{
-  transition: all .2s ease-in-out;
-}
-.hvr-float:hover
-{
-  transform: translateY(-8px);
 }

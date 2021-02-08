@@ -3,6 +3,7 @@
   padding: 0.5rem 0;
   background:rgba(160, 12, 12, 1);
   color: white;
+  border-bottom: 2px solid black;
 }
 
 .navigation .right 
