@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import PartyCard from '../components/PartyCard';
 import Link from 'next/link'
 import { Collapse, CardBody, Card } from 'reactstrap';
 import styles from '../styles/FindAParty.module.css'
@@ -9,6 +10,29 @@ export default function Home() {
   const [isOpen, setIsOpen] = useState(true);
 
   const toggleSearch = () => setIsOpen(!isOpen);
+
+  const parties = [
+    {
+      name: "The Seekers",
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    },
+    {
+      name: "Mustadio and Friends",
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    },
+    {
+      name: "Squish Squad",
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    },
+    {
+      name: "Squish Squad",
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    },
+    {
+      name: "The Seekers",
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+    }
+  ];
 
   return (
     <div className="bg-light">
@@ -34,8 +58,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h3 className="mb-0 thin d-inline">Filter</h3>
-              <button className={`btn btn-default mb-1 ml-2 d-inline`} onClick={toggleSearch}>
+              <button className={`btn btn-default mb-1 d-inline`} onClick={toggleSearch}>
                 <i className="fas fa-search"></i>
               </button>
               {/* <Button color="default" onClick={toggle}>Toggle</Button> */}
@@ -43,6 +66,12 @@ export default function Home() {
                 <Collapse isOpen={isOpen}>
                   <Card>
                     <CardBody>
+                      <div className="row">
+                        <div className="col">
+                          <h4 className="mb-0 thin">Filter</h4>
+                          <hr />
+                        </div>
+                      </div>
                       <div className="row">
                         <div className="col-lg-3">
                           <label htmlFor="how">How do you want to play?</label>
@@ -54,15 +83,15 @@ export default function Home() {
                         </div>
                         <div className="col-lg-3">
                           <label htmlFor="role">How do you want to play?</label>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="online" />
-                            <label class="form-check-label" for="online">
+                          <div className="form-check">
+                            <input className="form-check-input" type="checkbox" value="" id="online" />
+                            <label className="form-check-label" htmlFor="online">
                               Online
                             </label>
                           </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="inperson" />
-                            <label class="form-check-label" for="inperson">
+                          <div className="form-check">
+                            <input className="form-check-input" type="checkbox" value="" id="inperson" />
+                            <label className="form-check-label" htmlFor="inperson">
                               In Person
                             </label>
                           </div>
@@ -70,7 +99,7 @@ export default function Home() {
                         <div className="col-lg-3">
                           <label htmlFor="field1">Label 3</label>
                           <div className="form-check">
-                            <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+                            <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
                             <label className="form-check-label" htmlFor="exampleRadios1">
                               Default radio
                             </label>
@@ -91,17 +120,17 @@ export default function Home() {
                         <div className="col-lg-3">
                           <label htmlFor="field1">Label 4</label>
                           <br />
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                            <label class="form-check-label" htmlFor="inlineCheckbox1">1</label>
+                          <div className="form-check form-check-inline">
+                            <input className="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                            <label className="form-check-label" htmlFor="inlineCheckbox1">1</label>
                           </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                            <label class="form-check-label" htmlFor="inlineCheckbox2">2</label>
+                          <div className="form-check form-check-inline">
+                            <input className="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                            <label className="form-check-label" htmlFor="inlineCheckbox2">2</label>
                           </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled />
-                            <label class="form-check-label" htmlFor="inlineCheckbox3">3 (disabled)</label>
+                          <div className="form-check form-check-inline">
+                            <input className="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled />
+                            <label className="form-check-label" htmlFor="inlineCheckbox3">3 (disabled)</label>
                           </div>
                         </div>
                       </div>
@@ -124,16 +153,11 @@ export default function Home() {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-4">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button className="btn btn-default">View Party</button>
-              </div>
-            </div>
-            </div>
+            {
+              parties.map((value, index) => {
+                return <PartyCard key={index} name={value.name} description={value.description} />
+              })
+            }
           </div>
         </div>
       </section>
