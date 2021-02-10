@@ -14,23 +14,28 @@ export default function Home() {
   const parties = [
     {
       name: "The Seekers",
-      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
+      created: '01/04/2021'
     },
     {
       name: "Mustadio and Friends",
-      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
+      created: '01/04/2021'
     },
     {
       name: "Squish Squad",
-      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
+      created: '01/04/2021'
     },
     {
       name: "Squish Squad",
-      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
+      created: '01/04/2021'
     },
     {
       name: "The Seekers",
-      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+      description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
+      created: '01/04/2021'
     }
   ];
 
@@ -155,7 +160,7 @@ export default function Home() {
           <div className="row">
             {
               parties.map((value, index) => {
-                return <PartyCard key={index} name={value.name} description={value.description} />
+                return <PartyCard key={index} partyId={index+1} name={value.name} description={value.description} created={value.created} />
               })
             }
           </div>

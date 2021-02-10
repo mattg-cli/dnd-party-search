@@ -2,13 +2,16 @@
 // import Footer from './Footer';
 import Link from 'next/link'
 
-const PartyCard = ({index, name, description, icon}) => {
+const PartyCard = ({partyId, name, description, created}) => {
   return (
     <div className="col-lg-4">
-      <Link href="/">
+      <Link href={`party/${partyId}`}>
         <div className="card hover-dash-right mb-3">
-          <div className="card-body ">
-            <h5 className="card-title">{name}</h5>
+          <div className="card-header">
+            <h5 className="card-title mb-0">{name}</h5>
+          </div>
+          <div className="card-body">
+            <span>Created: {created}</span>
             <p className="card-text">{description}</p>
           </div>
         </div>
