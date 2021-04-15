@@ -79,29 +79,32 @@ export default function Home() {
                       </div>
                       <div className="row">
                         <div className="col-lg-3">
-                          <label htmlFor="how">How do you want to play?</label>
-                          <select className="form-control">
-                            <option value="">Any</option>
-                            <option value="online">Online</option>
-                            <option value="inperson">In Person</option>
-                          </select>
-                        </div>
-                        <div className="col-lg-3">
                           <label htmlFor="role">How do you want to play?</label>
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" value="" id="online" />
+                            <input className="form-check-input" type="checkbox" value="" id="online" checked />
                             <label className="form-check-label" htmlFor="online">
                               Online
                             </label>
                           </div>
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" value="" id="inperson" />
+                            <input className="form-check-input" type="checkbox" value="" id="inperson" checked />
                             <label className="form-check-label" htmlFor="inperson">
                               In Person
                             </label>
                           </div>
                         </div>
                         <div className="col-lg-3">
+                          <label htmlFor="how">Language</label>
+                          <select className="form-control">
+                            <option value="">Any</option>
+                            <option value="english">English</option>
+                            <option value="french">French</option>
+                            <option value="french">German</option>
+                            <option value="french">Spanish</option>
+                            <option value="french">Russian</option>
+                          </select>
+                        </div>
+                        {/* <div className="col-lg-3">
                           <label htmlFor="field1">Label 3</label>
                           <div className="form-check">
                             <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
@@ -137,7 +140,7 @@ export default function Home() {
                             <input className="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled />
                             <label className="form-check-label" htmlFor="inlineCheckbox3">3 (disabled)</label>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
 
                     </CardBody>
