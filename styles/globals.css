@@ -46,15 +46,55 @@ button.btn-default:hover
   background:#de1515;
   color: white;
 }
+button.btn-default a:hover {
+  color: white;
+  text-decoration: none;
+}
+button.btn-xlg
+{
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  line-height: 2;
+  border-radius: .3rem;
+  text-align: center;
+}
+
+button.btn-option
+{
+  padding: 5rem 0rem;
+  font-size: 1.5rem;
+  color: white;
+  border: 1px solid #000000;
+  overflow: hidden;
+  position: relative;
+  background-size: 150%;
+  background-position: center;
+  transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -ms-transition: all 0.5s ease;
+ -webkit-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+}
+button.btn-option:hover {
+  background-size: 200%;
+} 
 
 /* BACKGROUNDS */
 .bg-none
 {
   background: none !important;
 }
-.bg-opaque
+.bg-gray
+{
+  background: #636262;
+}
+.bg-dark-overlay-90
 {
   background-color: rgba(0,0,0,0.9);
+}
+.bg-dark-overlay-50
+{
+  background: rgba(0,0,0,0.5);
 }
 .bg-red
 {
@@ -102,19 +142,66 @@ ul.clean
   margin-left: .25em;
 }
 
-.hvr-breath
+/* EFFECTS */
+.hover-breath
 {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease;
+ -moz-transition: all 0.2s ease;
+ -ms-transition: all 0.2s ease;
+ -webkit-transition: all 0.2s ease;
+ -o-transition: all 0.2s ease;
 }
-.hvr-breath:hover{
+.hover-breath:hover
+{
   transform: scale(1.1);
 }
 
-.hvr-float
-{
-  transition: all .2s ease-in-out;
+.hover-dash-right {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-.hvr-float:hover
+.hover-dash-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #a00c0c;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform-origin: 0 50%;
+  -webkit-transform-origin: 0 50%;
+  transition-property: transform;
+  -webkit-transition-property: transform;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+}
+.hover-dash-right:hover
 {
-  transform: translateY(-8px);
+  cursor: pointer;
+  color: white;
+}
+.hover-dash-right:active, 
+.hover-dash-right:focus 
+{
+  color: white;
+}
+.hover-dash-right:hover:before, 
+.hover-dash-right:focus:before, 
+.hover-dash-right:active:before 
+{
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
 }

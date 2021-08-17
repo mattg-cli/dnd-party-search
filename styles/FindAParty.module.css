@@ -1,0 +1,16 @@
+.findAPartyBanner 
+{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-image: url(/images/town.jpg);
+}
+
+
+.resultsWrapper 
+{
+  background-image: url(/images/classes-clean-70.jpg);
+  background-position:center;
+  background-repeat:repeat-y;
+}

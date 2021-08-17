@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styles from './Navigation.module.css';
 
 const Navigation = props => (
-  <nav className={`fixed-top ${styles.navigation}`}>
+  <nav className={`${styles.navigation}`}>
     <div className="container">
       <div className="row">
         <div className="col-6">
