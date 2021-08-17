@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import PartyCard from '../components/PartyCard';
-import Link from 'next/link'
 import { Collapse, CardBody, Card } from 'reactstrap';
 import styles from '../styles/FindAParty.module.css'
 
@@ -66,8 +65,7 @@ export default function Home() {
               <button className={`btn btn-default mb-1 d-inline`} onClick={toggleSearch}>
                 <i className="fas fa-search"></i>
               </button>
-              {/* <Button color="default" onClick={toggle}>Toggle</Button> */}
-              <div style={{borderTop: '3px solid #a00c0c'}}>
+              <div style={{ borderTop: '3px solid #a00c0c' }}>
                 <Collapse isOpen={isOpen}>
                   <Card>
                     <CardBody>
@@ -81,13 +79,13 @@ export default function Home() {
                         <div className="col-lg-3">
                           <label htmlFor="role">How do you want to play?</label>
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" value="" id="online" checked />
+                            <input className="form-check-input" type="checkbox" value="" id="online" />
                             <label className="form-check-label" htmlFor="online">
                               Online
                             </label>
                           </div>
                           <div className="form-check">
-                            <input className="form-check-input" type="checkbox" value="" id="inperson" checked />
+                            <input className="form-check-input" type="checkbox" value="" id="inperson" />
                             <label className="form-check-label" htmlFor="inperson">
                               In Person
                             </label>
@@ -104,7 +102,7 @@ export default function Home() {
                             <option value="french">Russian</option>
                           </select>
                         </div>
-                        {/* <div className="col-lg-3">
+                        <div className="col-lg-3">
                           <label htmlFor="field1">Label 3</label>
                           <div className="form-check">
                             <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
@@ -140,7 +138,7 @@ export default function Home() {
                             <input className="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled />
                             <label className="form-check-label" htmlFor="inlineCheckbox3">3 (disabled)</label>
                           </div>
-                        </div> */}
+                        </div>
                       </div>
 
                     </CardBody>
@@ -163,7 +161,7 @@ export default function Home() {
           <div className="row">
             {
               parties.map((value, index) => {
-                return <PartyCard key={index} partyId={index+1} name={value.name} description={value.description} created={value.created} />
+                return <PartyCard key={index} partyId={index + 1} name={value.name} description={value.description} created={value.created} />
               })
             }
           </div>

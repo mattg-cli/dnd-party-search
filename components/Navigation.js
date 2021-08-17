@@ -2,29 +2,17 @@ import Link from 'next/link';
 import styles from './Navigation.module.css';
 
 const Navigation = props => (
-  <nav className={`${styles.navigation}`}>
-    <div className="container">
-      <div className="row">
-        <div className="col-6">
-          <ul className={`list-inline`}>
-            <li className="list-inline-item px-1">
-              <Link href="/">HOME</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="col-6">
-          <ul className={`list-inline text-right ${styles.right}`}>
-            <li className="list-inline-item px-1">
-              <Link href="/login">LOGIN</Link>
-            </li>
-            <li className="list-inline-item px-1">
-              <Link href="/register">REGISTER</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <div className={`${styles.navigation} d-flex flex-column flex-md-row align-items-center p-3 px-md-4 shadow-sm`}>
+    <h5 className="my-0 mr-md-auto font-weight-normal">
+      <a href="/">
+        D&amp;D Party Search
+      </a>
+    </h5>
+    <nav className="my-2 my-md-0 mr-md-3">
+      <a className="p-2" href="/find-a-party">Search</a>
+    </nav>
+    <a className="btn btn-outline-primary" href="/login">Login</a>
+  </div>
 );
 
 export default Navigation;

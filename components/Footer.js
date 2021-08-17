@@ -21,14 +21,14 @@ const Footer = props => {
       icon: 'fab fa-youtube'
     }
   ];
-  
+
   return (
     <div className={`shadow-lg ${styles.footerWrapper}`}>
       <div className={`pb-5 ${styles.footer}`}>
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-sm-6 col-lg-3 pt-5">
-              Logo
+            <div className="col-xs-12 col-sm-6 col-lg-3 pt-5 text-center">
+              <img className={styles.footerLogo} src="/images/logo-seekers.png" />
             </div>
             <div className="col-xs-12 col-sm-6 col-lg-3 pt-5">
               <h5>Explore</h5>
@@ -55,7 +55,7 @@ const Footer = props => {
                       <li key={index} className="list-inline-item">
                         <Icon link={value.link} icon={value.icon} />
                       </li>
-                      )
+                    )
                   })
                 }
               </ul>
