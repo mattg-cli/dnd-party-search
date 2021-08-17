@@ -3,7 +3,7 @@ import { useCountUp } from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import styles from './StatCircle.module.css';
 
-const StatCircle = ({index, title, number}) => {
+const StatCircle = ({ index, title, number }) => {
 
   // using a ref since we don't need a state change to re-render
   // useRef will keep the reference on every render/update
@@ -30,7 +30,7 @@ const StatCircle = ({index, title, number}) => {
 
   return (
     <div className="col-6 text-center">
-      <h4 className="mb-2 mt-5 text-uppercase">{title}</h4>
+      <h5 className="mb-2 mt-5 text-uppercase">{title}</h5>
       <div className={`${styles.counterCircle} flex align-items-center justify-content-center`}>
         <VisibilitySensor onChange={onChange}>
           <div className="d-flex align-items-center justify-content-center w-100 h-100">
